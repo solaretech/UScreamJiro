@@ -1,0 +1,2 @@
+module PostScreamsHelper
+end

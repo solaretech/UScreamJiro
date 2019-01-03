@@ -1,0 +1,12 @@
+<h2>投稿内容の編集</h2>
+<%= form_for(@scream) do |f| %>
+	<p>投稿(1)</p>
+	<%= f.text_area :first %>
+	<p>投稿(2)</p>
+	<%= f.text_area :second %>
+	<p>投稿(3)</p>
+	<%= f.text_area :third %>
+	<p>投稿(4) ※Swarm連携時、チェックインの投稿完了後に投稿されます</p>
+	<%= f.text_area :finale %>
+	<%= f.submit "登録" %>
+<% end %>

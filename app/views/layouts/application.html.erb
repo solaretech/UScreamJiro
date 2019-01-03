@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>UScreamJiroApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,13 @@
   </head>
 
   <body>
+    <header class="clearfix">
+      <h1 class="header-title">You Scream Jiro</h1>
+      <nav>
+        <li class="header-menu-list"><%= link_to "使い方", "/about", class:"header-menu-link" %></li>
+        <li class="header-menu-list">ログイン</li>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
